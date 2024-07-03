@@ -378,7 +378,7 @@ footer .container > div {
   line-height: 0.8rem;
 }
 
-/* ****************************** PAG. ACTIVIDADES *************************** */
+/* ****************************** PAG. ACTIVIDADES mobile *************************** */
 #titulo-actividades {
   color: #000000;
   text-align: center;
@@ -497,72 +497,76 @@ footer .container > div {
   background-size: cover;
   background-position: center;
   height: auto;
-  box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.5);
+  box-shadow: inset 0.5 1 0 2000px rgba(125, 121, 121, 0.5);
   display: flex;
   align-items: normal;
 }
+.contac-form {
+  box-shadow: inset 0 0 0 2000px rgba(169, 211, 186, 0.5);
+}
 .contacto {
+  display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
-  margin-top: 9em;
+  margin-top: 5em;
   padding-right: 1em;
   flex-direction: column;
-  padding-top: 7em;
+  padding-top: 1em;
   padding-left: 1em;
 }
+
 .contacto input {
   background-color: transparent;
   margin-bottom: 1em;
-  border: 2px solid white;
+  border: 2px solid rgb(131, 85, 21);
 }
 .contacto input::placeholder {
-  color: white;
+  color: rgb(81, 80, 80);
+  padding-left: 1em;
 }
-.contacto .form-control {
+
+.contacto .form-control,
+.form-input {
   background-color: transparent;
-  border: 2px solid white;
-  width: 70%;
+  border: 2px solid rgb(131, 85, 21);
+  width: 100%;
+  margin-bottom: 0.5em;
 }
 .contacto .form-select {
   background-color: transparent;
-  border: 1.5px solid white;
+  border: 1.5px solid rgb(131, 85, 21);
 }
 .contacto textarea {
   background-color: transparent;
   margin-top: 1em;
-  border: 2px solid white;
+  border: 2px solid rgb(131, 85, 21);
 }
 .contacto textarea::placeholder {
-  color: white;
+  color: rgb(81, 80, 80);
 }
-#titContac {
-  position: absolute;
-  padding-top: 2em;
-  padding-left: 1%;
-  font-family: var(--titulo-font);
-  font-size: 3rem;
-  font-weight: 300;
-  object-fit: cover;
-  color: white;
-}
+
 .recibInfo {
   font-size: medium;
   font-weight: 500;
-  color: white;
+  color: rgb(20, 19, 19);
 }
 input.button {
   margin: 0.2em;
   padding: 0.2em;
   border-radius: 3%;
   color: white;
-  border: 2px solid white;
+  border: 2px solid rgb(131, 85, 21);
+}
+.contacto .button {
+  background-color: rgb(59, 90, 59);
 }
 .button:hover {
   background-color: grey;
 }
 .contacto .inline {
-  color: white;
+  color: rgb(20, 19, 19);
+  font-weight: 500;
 }
 .error {
   color: rgb(121, 28, 28);
@@ -921,6 +925,7 @@ input.button {
     height: 115vh;
     display: flex;
     align-items: center;
+    padding-top: 2em;
   }
 
   .contacto {
@@ -928,10 +933,13 @@ input.button {
     justify-content: center;
     align-items: center;
     height: auto;
-    margin-top: 6em;
+    margin-top: 3em;
     padding-left: 1.5em;
     flex-direction: row;
     padding-top: 1.5em;
+  }
+  .contac-form {
+    width: 480px;
   }
   .contacto input {
     margin-bottom: 1em;
@@ -944,11 +952,9 @@ input.button {
   }
 
   #titContac {
-    position: relative;
     margin-bottom: 1em;
     font-size: 4.3rem;
     padding-left: 0.3em;
-    font-weight: 600;
   }
   .recibInfo {
     font-size: medium;
@@ -966,14 +972,14 @@ input.button {
     background: rgb(245, 247, 250);
   }
   #titulo-actividades {
-    text-align:start;
+    text-align: start;
     padding-right: 1.5em;
     font-size: 6em;
   }
   .animacTit {
-  padding: 0.5em;
+    padding: 0.5em;
   }
- 
+
   .card {
     position: relative;
     width: 500px;
